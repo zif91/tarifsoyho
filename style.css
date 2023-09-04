@@ -1,42 +1,53 @@
-/* Стили для таблицы */
-#tariffTable {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+  /* Основные стили */
+  body {
+    background-color: #f3f3f3; /* светло-серый фон */
+    font-family: Arial, sans-serif;
+  }
 
-#tariffTable th,
-#tariffTable td {
-  border: 1px solid #ccc;
-  text-align: center;
-  padding: 5px;
-}
+  table {
+    border-collapse: collapse; /* убираем двойные линии между ячейками */
+    margin: 20px auto; /* выровним таблицу по центру и добавим отступы */
+    width: 80%; /* ширина таблицы */
+  }
 
-#tariffTable th {
-  background-color: #f2f2f2;
-}
+  th, td {
+    border: 1px solid #ccc; /* тонкие изящные линии */
+    padding: 10px; /* внутренние отступы в ячейках */
+    text-align: center; /* выровняем текст по центру */
+  }
 
-/* Стили для чекбоксов и подписей к ним */
-#options {
-  display: flex;
-  flex-direction: column;
-}
+  th {
+    background-color: #ff9900; /* оранжевые заголовки */
+    color: white;
+  }
 
-#options input[type="checkbox"] {
-  margin-right: 10px;
-}
+  /* Кастомные чекбоксы */
+  input[type="checkbox"] {
+    appearance: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
 
-#options label {
-  /*margin-bottom: 10px;*/
-}
+  input[type="checkbox"]:checked {
+    background-color: #ff9900; /* оранжевый фон при выборе */
+    border: 1px solid #ff9900;
+  }
 
-/* Стили для рекомендуемого тарифа */
-#recommended {
-  font-size: 1.2em;
-  color: #007bff;
-}
-/* Стили для выделенного рекомендуемого тарифа */
-.highlighted {
-  background-color: #d4edda;
-}
+  /* Выделение рекомендованного тарифа */
+  .recommended {
+    background-color: #ccffcc; /* светло-зеленый фон */
+  }
+
+  /* Оформление блока с опциями и рекомендацией */
+  #options, #recommended {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  #recommended {
+    font-weight: bold;
+    color: #ff9900; /* оранжевые акценты */
+  }
