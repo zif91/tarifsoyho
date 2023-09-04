@@ -83,6 +83,7 @@ function highlightRecommendedTariff(recommendedTariff) {
   }
 }
 
+
 // Рекомендация тарифа
 function recommendTariff() {
   const selectedOptions = [];

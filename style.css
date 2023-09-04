@@ -51,3 +51,7 @@
     font-weight: bold;
     color: #ff9900; /* оранжевые акценты */
   }
+  /* Выделение рекомендованного тарифа */
+.highlighted {
+    background-color: #ccffcc; /* светло-зеленый фон */
+}
