@@ -1,0 +1,42 @@
+/* Стили для таблицы */
+#tariffTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#tariffTable th,
+#tariffTable td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 5px;
+}
+
+#tariffTable th {
+  background-color: #f2f2f2;
+}
+
+/* Стили для чекбоксов и подписей к ним */
+#options {
+  display: flex;
+  flex-direction: column;
+}
+
+#options input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#options label {
+  /*margin-bottom: 10px;*/
+}
+
+/* Стили для рекомендуемого тарифа */
+#recommended {
+  font-size: 1.2em;
+  color: #007bff;
+}
+/* Стили для выделенного рекомендуемого тарифа */
+.highlighted {
+  background-color: #d4edda;
+}
